@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS carrotscores;
+USE carrotscores;
+
+CREATE TABLE IF NOT EXISTS scores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    playerName VARCHAR(255) NOT NULL,
+    playerScore INT NOT NULL,
+    dateCreated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+); 
